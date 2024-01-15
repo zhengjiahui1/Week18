@@ -1,0 +1,202 @@
+body {
+    background-image: url(../images/quino-al-mBQIfKlvowM-unsplash.jpg);
+
+    /* （bottom），是（從 底部的地方，對齊）。 */
+    background-position: bottom;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav_bg_color {
+    background-color: rgba(83, 83, 83, 0.482);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(215, 215, 215);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(33, 33, 33);
+    background-color: rgb(228, 228, 228);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(215, 215, 215);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(185, 118, 17);
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgb(185, 118, 17);
+}
+
+.box {
+    background-color: rgba(109, 109, 109, 0.418);
+    color: rgb(250, 250, 250);
+    margin-top: 25px;
+    padding: 20px;
+}
+/*  
+    { (css)檔案， (第39行 ~ 第44行) :
+
+    〔 把 (效果)，寫在(html)裡， (第59行) 的 (box) 這個地方  ，
+        在 (box) 裡面，要怎麼樣，做一些 (排版、編排的效果) 〕 ；
+
+    〔我不想讓 (分頁式 選單)  和 【『格子系統』的『內容』: (背景 上面) 的 『文字框』和『文字的內容』】 的
+        這個的效果，它的排版 上下都黏在一起；
+        我可以運用 所謂的 (margin)的方式，讓它 (元素跟元素之間，互相 隔開來)，把這個 (效果) 給做出來，
+        打 (margin-top: 25px;) ， 它就可以幫你把 (跟上面的元素，給 隔開來) 〕 ；
+
+
+    〔 當(html)裡，(box) 後面打上，(text-center)，讓 (文字) (都 置中) 的效果後；
+
+        同時，也可以寫 (padding) :
+
+        我想讓 【『格子系統』的『內容』:  
+                    (背景 上面) 的  『文字框』和『文字的內容』 的
+                    這個的效果 ， 它的 (間距)，也(隔開來) 】 ；
+        先設個 (padding: 20px;) ， 上面、下面，都各(20px) ， 把它 (都互相 隔開來) ，
+        最後 把 (css)檔案，(存檔) ；
+
+        再 把 (html) 的網頁版，用 (瀏覽器 開起來) ，
+        (螢幕縮小)， 或  (網頁 右邊的程式碼打開，螢幕滑動、縮小)  ，
+
+        看 【『格子系統』的『內容』:  
+                (背景 上面) 的 『文字框』和『文字的內容』， 它的 (間距) (隔開來) 的 這個效果 ，
+                再自己 看看， (版面) 會不會亂跑 ?
+                如果(版面)，都不會亂跑的話，就還好 】 〕 。     }
+*/
+
+
+/*  可以用比較偷懶的方法：
+
+    （可以統一，一樣效果，放在同1個 選取器 裡面），用這樣的（1個 選取器 的寫法），比較省力一點；
+
+    這種相同的效果，比方說：
+    從（這3個）（id）的（a）、（b）、（c）的（不同的選取器），
+    各自都要設成： （區塊）、（高度）、（固定的1個 區塊範圍）。
+    
+    下面這3個（#a, #b, #c），字的意思，是指（這3個東西，都要同樣 套用相同的效果）。
+*/
+#a, #b, #c {
+    /*  顯示: 區塊；  */
+    display: block;
+
+    /*  高度： 800 像素；  */
+    height: 800px;
+
+    margin: 25px auto;
+    padding: 25px;
+}
+
+
+/*  （這3個）（id）的（a）、（b）、（c）， 因為背景的顏色，就是不一樣的東西了；
+    （各自3個 不同的功能，要換3個 不同的背景顏色），
+      所以要再寫（各自3個 不同的選取器 的設定），把它們分開來寫，可能比較好分辨、區分。
+    
+    要把背景顏色，刷淡一點； 這樣字，才不會看起來不清楚。
+*/
+#a {
+    background-color: rgb(153, 227, 203);
+}
+
+#b {
+    background-color: rgb(169, 122, 213);
+}
+
+#c {
+    background-color: rgb(113, 113, 228);
+}
+
+
+/*  【之後要繼續，從這裡往下開始，打註解】  */
+
+
+/*  【下面是 index.html（首頁）的檔案】：  */
+
+#box {
+    background-color: aquamarine;
+    color: rgba(46, 46, 46, 0.765);
+    width: 500px;
+    border: solid 2px #434343ea;
+    padding: 20px;
+    margin: 25px auto;
+}
+
+/*  【下面是 dropdown_menu_exercise.html（下拉式選單 練習）的檔案】：  */
+.dropdown-menu {
+    text-align: center;
+    margin: 15px auto;
+}
+
+a.dropdown-item {
+    color: black;
+    font-size: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.bg_1 {
+    background-image: url(../images/sky1.jpg);
+}
+
+.bg_2 {
+    background-image: url(../images/sky2.jpg);
+}
+
+.bg_3 {
+    background-image: url(../images/sky3.jpg);
+}
+
+.bg_4 {
+    background-image: url(../images/sky4.jpg);
+}
+
+.color_1 {
+    background-color: rgb(147, 147, 215);
+}
+
+.color_2 {
+    background-color: rgb(182, 102, 102);
+}
+
+.color_3 {
+    background-color: rgb(191, 198, 121);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.fixed_bg,
+.infos {
+    position: relative;
+    height: 100%;
+    margin: 25px auto;
+    margin-top: 27px;
+    padding: 20px;
+}
+
+.fixed_bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vcenter {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    color: rgb(227, 230, 233);
+}

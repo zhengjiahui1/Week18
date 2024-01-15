@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- 自己的 CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+
+    <title>關於我 | 鄭嘉惠</title>
+
+    <!-- 
+        要使用 (icon 字型)的引用，一定要貼這個(引用)，不然就不能用。
+
+        隨便找 1個字型 複製，就可以用；
+        PRO(professional)，要付費，沒有寫 PRO(professional) 的是免費版。
+     -->
+    <script src="https://kit.fontawesome.com/e1a41e3618.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 分頁式 選單 -->
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg_color">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="youtube.html">YouTube 練習</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact_me.html">關於我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dropdown_menu_exercise.html">下拉式選單 練習</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 
+        『（container）跟（row），是它原本規定好，一定要放的那個結構，我們原則上就是不動』 。
+
+            →  『  那再來就是：
+                    【 在 <div class="row"> 的 下一層 ，裡面的這一塊（div）】，
+                        我們就要開始做一些結構的變化。                           』
+
+                →   『  去用了『格子系統』的方式，讓它全部都滿版』 。
+
+                    【 (圖片)與(文字資訊) 的 (col-12) (上、下 對照的版面)，
+                        都是 (手機版)-(滿版) ， 上和下 (直式 排版)】 。
+
+                    【 (圖片)： (col-md-3) 】  與  【 (文字資訊)： (col-md-9) 】
+                        →  【 = (md)，都是 (平板) 】 ；
+                        →  【 (圖片) 的 (版面尺寸: 3)  +  (文字資訊) 的 (版面尺寸: 9) 
+                            = 【 (平板) 的 (版面尺寸: 1:3)，
+                                    左和右 (橫式 排版)，
+                                    (版面尺寸: 12) = (滿版) 】 。
+    -->
+
+    <div class="container box text-center">
+    <!-- 這邊做了 1個 (container) 的 (容器) 。 -->
+
+        <div class="row">
+
+
+            <!-- 圖片 -->
+            <div class="col-12 col-md-3">
+                <!-- 『格子系統』的 (比例) 。 -->
+                
+                <img class="img-fluid rounded-circle" src="../images/dog.png" alt="">
+                <!-- 
+                    (img-fluid) = 讓圖片有自適應的效果，移動畫面時，就會跟著縮放圖片大小。
+                    (rounded-circle) = (圓形邊框 的 圖片效果) ，讓圖片有圓角的效果。
+
+                    『 "img-fluid rounded-circle" = 我的圖片，它如何做 (ㄓˋ ㄕˋ ㄧㄥˋ) 的效果 ，
+                        包含 (img-fluid) 這個功能，跟 (圓角 的效果) 。 』
+
+                    『 這個 (圖片) 的 (圓角 的效果) ，
+                         如果用 (border-radius) 的 (CSS 的效果)，也可以做出來 ，
+                         (rounded-circle) 的 (CSS 的效果) ， 其實就是 (border-radius) ，
+                         它只是幫你寫好而已，這是一樣的功能 。 』
+                -->
+            </div>
+
+
+            <!-- 文字資訊 -->
+            <div class="col-12 col-md-9">
+                <!-- 『格子系統』的 (比例) 。 -->
+
+                <!-- (h2 的 標籤)，裡面放 (標題2 的文字) 。 -->
+                <h2>鄭嘉惠</h2>
+
+                <!--    
+                    <p> 的(段落標籤)，
+                        裡面放了（lorem）的文字 = （假文字）的意思。
+                -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, autem. Reiciendis quidem, doloremque nam atque aspernatur omnis consequuntur, laboriosam neque sunt illum reprehenderit doloribus porro, eveniet ullam. Quasi, voluptatem asperiores?
+                </p>
+
+                <!-- 選單 -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="mailto:azht09886@gmail.com">
+                                <!-- （e-mail）的（icons 字型）。 -->
+                                <i class="fa-solid fa-square-envelope"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/">
+                                <!-- （youtube）的（icons 字型）。 -->
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <!-- （facebook）的（icons 字型）。 -->
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+    <!--
+        【 『第59行 ~ 第71行』，是 (分頁式 選單) 下面的，
+        
+            『格子系統』的『內容』:
+                (背景 上面) 的 『文字框』和『文字的內容』。 】
+        
+
+        { (結構) :
+
+            『格子系統』的『內容』:
+
+                (群組) 的 (第1層) :
+                    一. 第1個 最外層的結構: (container)，(顯示螢幕尺寸、版面的效果，要左右留白) 。
+                    二. 把 (box) 的 (效果)，寫在 (container) 這一層的 (div)群組 裡面 。
+                    三. 我想要讓 (文字)，(都 置中) :
+                        在 (box) 後面打上，(text-center)，讓 (文字) (都 置中) 的效果 。
+                
+                (群組) 的 (第2層) :
+                ?? 有疑問，要問老師:
+                 <div class="row"> ， "row" 是什麼?
+
+                (群組) 的 (第3層) :
+                    一. 全部都是 【(col-12) = 顯示螢幕尺寸、版面的效果，要 (滿版)，不要左右留白】。
+
+                    二. 在裡面就可以打，我要的內容 :
+
+                        1.  【 h1 = (文字的標籤1)，也可稱為: (文字的標題1) 】 ，
+                                <h1>，是標籤的 (開頭1)  ，
+                                </h1>，是標籤的 (結束1) 。
+                        
+                        2.  【 <p> = (文字的段落) 的 (開頭) ，
+                              </p> = (文字的段落) 的 (結束) 。】
+
+                              
+                            【  這個是 (排版) 在用的 :
+
+                                如果不知道要打什麼文字，
+                                要 (做測試文字 的格式 那種內容的大小) 、 輸入 (一大堆 沒有意義的文字)；
+
+                                除了 (我自己全部打完字) 之外；
+
+                                有1個效果的 (關鍵字)，叫做 (Lorem)，
+                                打 (lo)，旁邊就會 顯示出 (lorem) 的 提示字，按 (enter 鍵) ，
+                                就會跑出 (一堆 沒有意義的文字) 給你。  】
+        }
+    -->
+
+
+<!--
+    『第66行 ~ 第83行』，是『互動的功能，引用的地方』，
+      原則上不動，它通常都會被放在最下方，所以這個就不要動。
+-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

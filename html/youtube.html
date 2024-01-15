@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- 自己的 CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+
+    <title>YouTube 練習 | 鄭嘉惠</title>
+</head>
+
+<body>
+    <!-- 分頁式 選單 -->
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg_color">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="youtube.html">YouTube 練習</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_me.html">關於我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dropdown_menu_exercise.html">下拉式選單 練習</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 
+        【 『第63行 ~ 第105行』，
+            是 (分頁式 選單) 下面的，
+        
+            『格子系統』的『內容』:
+                (背景 上面) 的 『影片的外框』和『影片』。 】
+    -->
+
+    <!-- 這邊做了，1個 (container) 的 (容器) 。 -->
+    <div class="container box text-center">
+
+        <div class="row">
+
+            <!-- 用了『格子系統』的方式，讓它全部都滿版。 -->
+            <div class="col-12 embed-responsive embed-responsive-16by9">
+
+                <!-- 
+                    （嵌入）（1個 YouTube影片）的（連結）：
+                        把外部的效果，給（嵌入）進去。         
+                -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tk6glyjxfPs?si=fQe6fGUsFynDwMI4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <!--
+                    （步驟的過程）：
+                        找（YouTube）的（1個影片）
+                        → 按（分享）
+                        → 點裡面的（嵌入）
+                        → 把（嵌入影片）的（連結）複製起來。
+                -->
+
+            </div>
+    
+            
+            <div class="col-12 embed-responsive embed-responsive-16by9">
+
+                <!-- 
+                    （嵌入）（1個 YouTube影片）的（連結）：
+                        把外部的效果，給（嵌入）進去。         
+                -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v9XyIGXcRck?si=xL-dp3WZ4oucjTuS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <!--
+                    （步驟的過程）：
+                        找（YouTube）的（1個影片）
+                        → 按（分享）
+                        → 點裡面的（嵌入）
+                        → 把（嵌入影片）的（連結）複製起來。
+                -->
+
+            </div>
+    
+        </div>
+        
+    </div>
+    <!--
+        { （整體的結構）：
+
+            『格子系統』的『內容』:
+
+                (群組) 的 (第1層) :
+                    一. 第1個 最外層的結構: (container)，(顯示螢幕尺寸、版面的效果，要左右留白) 。
+                    二. 把 (box) 的 (效果)，寫在 (container) 這一層的 (div)群組 裡面 。
+                    三. 我想要讓 (文字)，(都 置中) :
+                        在 (box) 後面打上，(text-center)，讓 (文字) (都 置中) 的效果 。
+                
+                (群組) 的 (第2層) :
+                ?? 有疑問，要問老師:
+                 <div class="row"> ， "row" 是什麼?
+
+                (群組) 的 (第3層) :
+                    一. 全部都是 【(col-12) = 顯示螢幕尺寸、版面的效果，要 (滿版)，不要左右留白】。
+        }
+    -->
+
+
+<!--
+    『第132行 ~ 第149行』，是『互動的功能，引用的地方』，
+      原則上不動，它通常都會被放在最下方，所以這個就不要動。
+-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
